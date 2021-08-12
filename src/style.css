@@ -1,13 +1,24 @@
-*{
-    background-color:#7EE4D7;
+* {
+   background-color: rgb(87, 241, 241);
+   margin: 50;
 }
 
- .footer {
-    background-color: #f70a0a;
-    position: right;
-    bottom: 100%;
-    width: 100%;
-    height: 40px;
-    color: white;
-    margin-bottom: 40px;
-    }
+h1 {
+    text-align: center;
+    margin-top: 30px ;
+    margin: auto;
+    width: 1200px;
+    background: #ff002b;
+    } 
+
+select{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   
+   
+}   
+
+
+
+
+
+ 
