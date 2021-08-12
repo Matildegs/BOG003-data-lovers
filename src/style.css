@@ -1,5 +1,5 @@
 * {
-   background-color: rgb(87, 241, 241);
+   background-color: hsl(249, 87%, 50%);
    margin: 50;
 }
 
@@ -9,13 +9,26 @@ h1 {
     margin: auto;
     width: 1200px;
     background: #ff002b;
+    padding: 3%;
     } 
 
-select{
+select, option{
    font-family: Georgia, 'Times New Roman', Times, serif;
-   
+   font-size: large;
+   border-color: red;
+   background-color: seashell;
    
 }   
+
+button{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: x-large;
+   position: right;
+   color: #ffffff;
+   background-color: rgb(248, 20, 20);
+   border-radius: 6px;
+   border: 2px solid hsl(0, 100%, 50%);
+}
 
 
 
