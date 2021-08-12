@@ -13,24 +13,27 @@ h1 {
     border-radius: 10px;
     } 
 
-select, option{
+.listaPokemones{
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: large;
-   border-color: red;
-   border-radius: 8px;
-   background-color: seashell;
+   border-radius: 10px;
+   }    
 
-   
-}   
+select,option{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: large;
+   border-radius: 10px;
+   background-color: rgb(248, 252, 27);
+   }   
 
-button{
+
+.boton_personalizado{
    font-family: 'Times New Roman', Times, serif;
    font-size: x-large;
-   position: right;
+   position: center;
    color: #ffffff;
-   background-color: rgb(248, 20, 20);
-   border-radius: 6px;
-   border: 2px solid hsl(0, 100%, 50%);
+   border-radius: 8px;
+   background-color: #ff002b;
 }
 
 
