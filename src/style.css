@@ -1,6 +1,7 @@
 * {
    background-color: hsl(249, 87%, 50%);
    margin: 50;
+   
 }
 
 h1 {
@@ -30,7 +31,6 @@ select,option{
 .boton_personalizado{
    font-family: 'Times New Roman', Times, serif;
    font-size: x-large;
-   position: center;
    color: #ffffff;
    border-radius: 8px;
    background-color: #ff002b;
