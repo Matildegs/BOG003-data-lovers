@@ -2,49 +2,70 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>Data Lovers - Pokedex</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="Imagenes/telefono-inteligente.png"/>
   </head>
   <body>
-    <h1>¡Bienvidos a tu sitio web que desde ahora sera tu lugar favorito para conocer mas acerca de Pokemon!</h1>
-    
-    <select name="list">
-     <option value="">Sobre cuales pokemones quieres conocer</option>
-     <option value="">Dragon</option>
-     <option value="">Electrico</option>
-     <option value="">Hada</option>
-     <option value="">Fuego</option>
-     <option value="">Volador</option>
-     <option value="">Fantasma</option>
-     <option value="">Planta</option>
-     <option value="">Tierra</option>
-     <option value="">Hielo</option>
-     <option value="">Normal</option>
-     <option value="">Veneno</option>
-     <option value="">Psíquico</option>
-     <option value="">Roca</option>
-     <option value="">Acero</option>
-     <option value="">Agua</option>
-   </div> 
-  </select>
+    <!--Bienvenida-->
+     <header>
+        <div id="root" class="root">
+          <h1>¡Bienvidos a tu sitio web que desde ahora sera tu lugar favorito para conocer 
+            mas acerca de Pokemon!</h1>
+          <img id="logo" src="Imagenes/Group 1.png" center>
+        </div>
+     </header>
 
-    <div class="order">
-    <select name="Order" id="Order">
-      <option value="">¿De que manera deseas ver la lista?</option>
-      <option value="">Ascendente</option>
-      <option value="">Descendente</option>
-    </select>
-    </div>
+    <!--Menu de navegación-->
+     <nav>
 
-    <div class="foooter">
-    <footer>
-      <a href="https://pokemongolive.com/es/"> 
-      <button>
-        Pokemon Go
-      </button>
-      </a>
-    </footer>
-    </div>
-    <script src="main.js" type="module"></script>
+       <!--Tipo de Pokemon-->
+
+         <div class="List" id="list">
+            <select name="list">
+            <option value="">Sobre cuales pokemones quieres conocer</option>
+            <option value="">Dragon</option>
+            <option value="">Electrico</option>
+            <option value="">Hada</option>
+            <option value="">Fuego</option>
+            <option value="">Volador</option>
+            <option value="">Fantasma</option>
+            <option value="">Planta</option>
+            <option value="">Tierra</option>
+            <option value="">Hielo</option>
+            <option value="">Normal</option>
+            <option value="">Veneno</option>
+            <option value="">Psíquico</option>
+            <option value="">Roca</option>
+            <option value="">Acero</option>
+            <option value="">Agua</option>
+            </select>
+          </div> 
+          
+        <!--Orden-->
+
+          <div class="order">
+            <select name="Order" id="Order">
+            <option value="">¿De que manera deseas ver la lista?</option>
+            <option value="">Ascendente</option>
+            <option value="">Descendente</option>
+            </select>
+          </div>
+      </nav>
+      <!--Pokemones-->
+       <main> </main>
+
+      <!--Pie de Pagina-->
+      <footer>
+        <center>
+        <div class="footer">
+         <a href="https://pokemongolive.com/es/"> 
+         <button>Pokemon Go</button>
+         </a>
+        </div>
+        </center>
+      </footer>
+       
+   <script src="main.js" type="module"></script>
   </body>
 </html>

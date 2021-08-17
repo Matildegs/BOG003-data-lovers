@@ -1,20 +1,28 @@
-* {
-   background-color: rgb(87, 241, 241);
-   margin: 50;
+body{
+   background-image: radial-gradient(circle at 0% 0%, #6cf1ff 0, #1e90ff 50%, #003a76 100%);   
 }
-
+.root{
+   text-align: center;
+}
+.order{
+   text-align: center;
+}
 h1 {
-    text-align: center;
-    margin-top: 30px ;
-    margin: auto;
-    width: 1200px;
-    background: #ff002b;
-    } 
+   text-align: center;
+   margin-top: 30px ;
+   margin: auto;
+   width: 1200px;
+   background-image: radial-gradient(circle at 87.5% 12.5%, #ffc300 0, #ffb300 8.33%, #ffa100 16.67%,
+     #ff8d00 25%, #ff7700 33.33%, #ff5f00 41.67%, #ff4400 50%, #ef2416 58.33%, #e10022 66.67%,
+     #d3002a 75%, #c70031 83.33%, #bb0039 91.67%, #b20041 100%);
+   color: #DCF2F7;
+   background-position: center;
+   font-family: fantasy;
+} 
 
 select{
    font-family: Georgia, 'Times New Roman', Times, serif;
-   
-   
+
 }   
 
 
