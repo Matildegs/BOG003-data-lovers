@@ -1,7 +1,6 @@
 body{
    background-image: radial-gradient(circle at 0% 0%, #6cf1ff 0, #1e90ff 50%, #003a76 100%);   
 }
-
 h1 {
    text-align: center;
    margin-top: 30px ;
@@ -29,13 +28,15 @@ h1 {
    border: 2px solid rgb(0, 0, 0);
    border-radius: 20px;
    background-color: rgb(250, 62, 62);
+   
 }
 .listaPokemones{
    font-family: Georgia, 'Times New Roman', Times, serif;  
    font-size: large;
    border-radius: 10px;
    text-align: center;
-   }    
+   display: flex;
+}    
 
 select,option{
    font-family: Georgia, 'Times New Roman', Times, serif;
