@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
    background-image: radial-gradient(circle at 0% 0%, #6cf1ff 0, #1e90ff 50%, #003a76 100%);   
 }
@@ -6,8 +7,15 @@ body{
 }
 .order{
    text-align: center;
+=======
+* {
+   background-color: hsl(249, 87%, 50%);
+   margin: 50;
+   
+>>>>>>> a4da0fde652ae7d27620526b7aa050a717fbea26
 }
 h1 {
+<<<<<<< HEAD
    text-align: center;
    margin-top: 30px ;
    margin: auto;
@@ -19,11 +27,43 @@ h1 {
    background-position: center;
    font-family: fantasy;
 } 
+=======
+    text-align: center;
+    margin-top: 30px ;
+    margin: auto;
+    width: 1200px;
+    background: #ff002b;
+    padding: 3%;
+    border-radius: 10px;
+    } 
+>>>>>>> a4da0fde652ae7d27620526b7aa050a717fbea26
 
-select{
+.listaPokemones{
    font-family: Georgia, 'Times New Roman', Times, serif;
+<<<<<<< HEAD
 
 }   
+=======
+   font-size: large;
+   border-radius: 10px;
+   }    
+
+select,option{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: large;
+   border-radius: 10px;
+   background-color: rgb(248, 252, 27);
+   }   
+
+
+.boton_personalizado{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: x-large;
+   color: #ffffff;
+   border-radius: 8px;
+   background-color: #ff002b;
+}
+>>>>>>> a4da0fde652ae7d27620526b7aa050a717fbea26
 
 
 
