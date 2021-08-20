@@ -79,6 +79,11 @@ select,option{
    color: #ffffff;
    border-radius: 8px;
    background-color: #ff002b;
+   
+}
+footer{
+   clear:both;
+   text-align: center;
 }
 
 
