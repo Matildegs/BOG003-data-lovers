@@ -67,8 +67,12 @@ select,option{
    background-color: rgb(248, 252, 27);
    float:left;
    margin: center;
-   margin-left: 30px;
-}   
+   margin-left: 20px;
+}  
+.attack{
+   float: left;
+  
+} 
 .order {
    text-align: center;
    display: flex;
@@ -85,7 +89,9 @@ footer{
    clear:both;
    text-align: center;
 }
-
+div{
+   float: left;  
+}
 
 
 
