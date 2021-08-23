@@ -25,4 +25,6 @@ const mostrarPokemones= () => {
 window.addEventListener("Load", (mostrarPokemones()));
 
 
+
+
 // console.log(example, data);

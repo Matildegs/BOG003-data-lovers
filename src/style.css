@@ -1,5 +1,5 @@
 body{
-   background-image: radial-gradient(circle at 0% 0%, #6cf1ff 0, #1e90ff 50%, #003a76 100%);   
+   background-image: radial-gradient(circle at 0% 0%, #1edbf0 0, #1e90ff 50%, #003a76 100%);   
 }
 
 h1 {
@@ -17,16 +17,15 @@ h1 {
    border-radius: 10%;
 } 
 .imgPoke{
-   width: 80px;
-   height: 80px;
+   width: 90px;
+   height: 90px;
    
 }
 
 .tarjetaPokemon{
-   position: relative;
    width: 10%;
-   height: 90%;
-   border: 2px solid rgb(0, 0, 0);
+   height: 50%;
+   border: 2px solid rgb(255, 252, 252);
    border-radius: 20px;
    background-color: rgb(250, 62, 62);
 }
@@ -45,12 +44,11 @@ select,option{
    }   
 
 
-.boton_personalizado{
+button{
    font-family: 'Times New Roman', Times, serif;
    font-size: x-large;
-   color: #ffffff;
    border-radius: 8px;
-   background-color: #ff002b;
+   background-color: hsl(350, 100%, 50%);
 }
 
 
