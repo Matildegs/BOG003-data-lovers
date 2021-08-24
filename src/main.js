@@ -14,6 +14,7 @@ const mostrarPokemones= () => {
         console.log(divImage.src)
         const divPokemon= document.createElement("div");
         divPokemon.classList.add("tarjetaPokemon");
+
         divPokemon.appendChild(parrafoNombre);
         divPokemon.appendChild(divImage);
         divPokemones.appendChild(divPokemon);
@@ -24,6 +25,19 @@ const mostrarPokemones= () => {
     document.querySelector(".container").appendChild(divPokemones);
 }
 window.addEventListener("Load", (mostrarPokemones()));
+
+
+
+const formOrder= document.querySelector('#formOrder');
+const formAttack= document.querySelector('#formAttack');
+
+
+
+const orderAscendente= mostrarPokemones;
+console.log(orderAscendente.sort());
+
+
+
 
 
 

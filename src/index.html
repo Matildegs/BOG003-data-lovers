@@ -12,13 +12,12 @@
         <div id="root" class="root">
           <h1>¡Bienvidos a tu sitio web que desde ahora sera tu lugar favorito para conocer 
             mas acerca de Pokemon!</h1>
-          <img id="logo" src="Imagenes/Group 1.png" center>
+          <img class="logo" src="Imagenes/Group 1.png">
         </div>
      </header>
 
     <!--Menu de navegación-->
      <nav>
-
        <!--Tipo de Pokemon-->
 
          <div class="List" id="list">
@@ -45,23 +44,31 @@
         <!--Orden-->
 
           <div class="order">
-            <select name="Order" id="Order">
+            <select name="Order" id="formOrder">
             <option value="">¿De que manera deseas ver la lista?</option>
             <option value="">Ascendente</option>
             <option value="">Descendente</option>
             </select>
           </div>
+        <!--Ataque/Defensa-->
+
+        <div class="attack" id="formAttack">
+          <select name="attack" id="attack">
+          <option value="">Mejor ataque o defensa</option>
+          <option value="">Base de Ataque</option>
+          <option value="">Base de Defensa</option>
+          </select>
+      
+        </div>
       </nav>
       <!--Pokemones-->
-       <main class= "container">
-         
-          </main>
+       <main class= "container"></main>
 
       <!--Pie de Pagina-->
       <footer>
         <div class="footer">
          <a href="https://pokemongolive.com/es/"> 
-         <button>Pokemon Go</button>
+         <button>¡ES HORA DE JUGAR!</button>
          </a>
         </div>
       </footer>
