@@ -17,6 +17,7 @@ const mostrarPokemones= () => {
         divPokemon.appendChild(parrafoNombre);
         divPokemon.appendChild(divImage);
         divPokemones.appendChild(divPokemon);
+       
         
 
     }) 
@@ -27,4 +28,6 @@ window.addEventListener("Load", (mostrarPokemones()));
 
 
 
-// console.log(example, data);
+
+
+// console.log(example, data)
