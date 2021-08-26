@@ -5,20 +5,27 @@ const arrayPokemones= data.pokemon;
 const mostrarPokemones= () => {
     const divPokemones= document.createElement("div");
     arrayPokemones.forEach(poke=>{
-        const parrafoNombre= document.createElement("p");
+        const parrafoNombre= document.createElement("h2");
         parrafoNombre.innerHTML= poke.name;
-        console.log(parrafoNombre)
+        const typePokemon = document.createElement("h3");
+        typePokemon.innerHTML = poke.type;
+        const baseAttack = document.createElement("h3");
+        baseAttack.innerHTML = poke.stats['base-attack'];
+        const baseDefense = document.createElement("h3");
+        baseDefense.innerHTML = poke.stats['base-defense'];
         const divImage= document.createElement("img");
         divImage.classList.add("imgPoke");
         divImage.src= poke.img; 
-        console.log(divImage.src)
-        const divPokemon= document.createElement("div");
+       const divPokemon= document.createElement("div");
         divPokemon.classList.add("tarjetaPokemon");
 
         divPokemon.appendChild(parrafoNombre);
+        divPokemon.appendChild(typePokemon);
+        divPokemon.appendChild(baseAttack);
+        divPokemon.appendChild(baseDefense);
         divPokemon.appendChild(divImage);
         divPokemones.appendChild(divPokemon);
-       
+      
         
 
     }) 
@@ -27,21 +34,7 @@ const mostrarPokemones= () => {
 window.addEventListener("Load", (mostrarPokemones()));
 
 
-
-const formOrder= document.querySelector('#formOrder');
-const formAttack= document.querySelector('#formAttack');
-
-
-
-const orderAscendente= mostrarPokemones;
-console.log(orderAscendente.sort());
-
-
-
-
-
-
-
-
-
-// console.log(example, data)
+document.getElementById("formOrder").addEventListener("change"),
+() =>  {
+    console.log("Cambiaron Opcion")
+}
