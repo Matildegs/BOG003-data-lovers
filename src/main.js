@@ -43,3 +43,11 @@ selectElement.addEventListener('change', (event) =>{
     console.log(event)
     console.log('Escogiste el orden'+ event.target.value)
 });
+//Filter
+let filter = document.getElementById("filterType");
+filter.addEventListener ("change", () =>{
+    let pokemonsFlitrados = arrayPokemones.filter(pokemon => {
+        console.log(pokemon.type)
+        console.log(pokemonsFlitrados)
+});
+})
