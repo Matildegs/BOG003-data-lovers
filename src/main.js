@@ -34,7 +34,14 @@ const mostrarPokemones= () => {
 window.addEventListener("Load", (mostrarPokemones()));
 
 
-document.getElementById("formOrder").addEventListener("change"),
-() =>  {
-    console.log("Cambiaron Opcion")
-}
+const selectElement = document.querySelector('#formOrder');
+
+selectElement.addEventListener('change', (event) =>{
+    
+    const order = document.querySelector ('.result')
+    //order.textContent = 'Escogiste el orden ${event.target.value}'
+    console.log(event)
+    console.log('Escogiste el orden'+ event.target.value)
+});
+
+ 
