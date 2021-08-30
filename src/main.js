@@ -43,5 +43,3 @@ selectElement.addEventListener('change', (event) =>{
     console.log(event)
     console.log('Escogiste el orden'+ event.target.value)
 });
-
- 
