@@ -65,9 +65,21 @@ selectElement.addEventListener('change', (event) =>{
     
 //Filter
 let filter = document.getElementById("filterType");
-filter.addEventListener ("change", () =>{
-    let pokemonsFlitrados = arrayPokemones.filter(pokemon => {
-        console.log(pokemon.type)
-        console.log(pokemonsFlitrados)
-});
-})
+filter.addEventListener ("change", (event) =>{
+    const filter = document.querySelector ('.result');
+     let filterType = selectFilter.sort(
+         (a, b) => { 
+            if(a.type === b.type){ 
+                return 0
+            
+            }
+            else if(a.type > b.type){
+                return 1
+            }
+            else if(a.type < b.type){
+                return -1
+            };
+
+         }
+     )}) 
+     console.log(filterType);
