@@ -21,7 +21,7 @@ const mostrarPokemones= () => {
 
         divPokemon.appendChild(parrafoNombre);
         divPokemon.appendChild(typePokemon);
-        divPokemon.appendChild(baseAttack);
+        divPokemon.appendChild(baseAttack);1
         divPokemon.appendChild(baseDefense);
         divPokemon.appendChild(divImage);
         divPokemones.appendChild(divPokemon);
@@ -38,10 +38,27 @@ const selectElement = document.querySelector('#formOrder');
 
 selectElement.addEventListener('change', (event) =>{
     
-    const order = document.querySelector ('.result')
-    //order.textContent = 'Escogiste el orden ${event.target.value}'
-    console.log(event)
-    console.log('Escogiste el orden'+ event.target.value)
-});
+    const order = document.querySelector ('.result');
+    let selectOrder = arrayPokemones;
+    let resultNew = selectOrder.sort(
+        (a, b) => { 
+        if(a.num === b.num){ 
+            return 0
+        
+        }
+        else if(a.num > b.num){
+            return 1
+        }
+        else if(a.num < b.num){
+            return -1
+        }
+    }
+      
 
- 
+
+
+     );
+    console.log(resultNew);
+    console.log(event)
+   
+});
