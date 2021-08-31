@@ -197,7 +197,7 @@ export default {
   },
   {
     "num": "003",
-    "name": "venusaur",
+    "num": "venusaur",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -1812,7 +1812,7 @@ export default {
   },
   {
     "num": "020",
-    "name": "raticate",
+    "num": "raticate",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -3952,7 +3952,7 @@ export default {
   },
   {
     "num": "042",
-    "name": "golbat",
+    "num": "golbat",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -4056,7 +4056,7 @@ export default {
   },
   {
     "num": "043",
-    "name": "oddish",
+    "num": "oddish",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -4165,7 +4165,7 @@ export default {
   },
   {
     "num": "044",
-    "name": "gloom",
+    "num": "gloom",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -7674,7 +7674,7 @@ export default {
   },
   {
     "num": "079",
-    "name": "slowpoke",
+    "num": "slowpoke",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -8069,7 +8069,7 @@ export default {
   },
   {
     "num": "083",
-    "name": "farfetch'd",
+    "num": "farfetch'd",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -10580,7 +10580,7 @@ export default {
   },
   {
     "num": "108",
-    "name": "lickitung",
+    "num": "lickitung",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -11953,7 +11953,7 @@ export default {
   },
   {
     "num": "122",
-    "name": "mr. mime",
+    "num": "mr. mime",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -13352,7 +13352,7 @@ export default {
   },
   {
     "num": "137",
-    "name": "porygon",
+    "num": "porygon",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -17646,7 +17646,7 @@ export default {
   },
   {
     "num": "182",
-    "name": "bellossom",
+    "num": "bellossom",
     "generation": {
       "num": "generation ii",
       "name": "johto"
@@ -18595,7 +18595,7 @@ export default {
   },
   {
     "num": "192",
-    "name": "sunflora",
+    "num": "sunflora",
     "generation": {
       "num": "generation ii",
       "name": "johto"
@@ -22229,7 +22229,7 @@ export default {
   },
   {
     "num": "233",
-    "name": "porygon2",
+    "num": "porygon2",
     "generation": {
       "num": "generation ii",
       "name": "johto"
