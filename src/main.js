@@ -21,7 +21,7 @@ const mostrarPokemones= () => {
 
         divPokemon.appendChild(parrafoNombre);
         divPokemon.appendChild(typePokemon);
-        divPokemon.appendChild(baseAttack);1
+        divPokemon.appendChild(baseAttack);
         divPokemon.appendChild(baseDefense);
         divPokemon.appendChild(divImage);
         divPokemones.appendChild(divPokemon);
@@ -53,11 +53,7 @@ selectElement.addEventListener('change', (event) =>{
             return -1
         }
     }
-      
-
-
-
-     );
+        );
     console.log(resultNew);
     console.log(event)
    
@@ -66,8 +62,11 @@ selectElement.addEventListener('change', (event) =>{
 //Filter
 let filter = document.getElementById("filterType");
 filter.addEventListener ("change", () =>{
-    let pokemonsFlitrados = arrayPokemones.filter(pokemon => {
-        console.log(pokemon.type)
-        console.log(pokemonsFlitrados)
+    
+    let pokemonesFiltrados = arrayPokemones;
+    let newArray = pokemonesFiltrados.filter(
+        
+    )
+
+        console.log(filter.type)
 });
-})
