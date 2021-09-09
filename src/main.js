@@ -38,16 +38,10 @@ const selectElement = document.querySelector('#formOrder');
 console.log(selectElement);
 selectElement.addEventListener('change', (event) =>{
     
-   // const order = document.querySelector ('.result');
-    //let selectOrder = arrayPokemones; 
-
-    const orderPoks = arrayPokemones.map((pokemon) =>{
-        return pokemon.name
-    });
-    console.log(orderPoks.sort());
-    console.log(arrayPokemones)
-   /* let resultNew = selectOrder.sort(
-        (a, b) => { 
+    const order = document.querySelector ('.result');
+    let selectOrder = arrayPokemones; 
+    let resultNew = selectOrder.sort(
+       (a, b) =>{ 
         if(a.name === b.name){ 
             return 0
         
@@ -58,25 +52,27 @@ selectElement.addEventListener('change', (event) =>{
         else if(a.name < b.name){
             return -1
         }
-    }
-        );*/
-    //console.log(resultNew);
-    //console.log(event)
-   
-   
-});
+    });
     
-//filtrado por defensa
-function filtrar()
-{
-    let filterBest = document.getElementById("formAttack");
+    console.log(resultNew);
+    console.log(event)
+});
+
+//orden descendente
+
+const order = document.querySelector ('.result');
+    let selectOrder = arrayPokemones; 
+    let resultNew = selectOrder.reverse(
+         (b, a)=>{
+
+
+    });
+    
+//filtrado por defense
+    const filterBest = document.getElementById("formAttack");
     filterBest.addEventListener ("change", () =>{
-        let filtrado = arrayPokemones;
+        let filtrado = arrayPokemones;})
 
-
-
-})
-}
 
 
 // "base-attack": "118",
@@ -85,15 +81,13 @@ function filtrar()
 
 //Filter
 
-
-
 let filterType = document.getElementById("filterType");
 filterType.addEventListener ("change", () =>{
     
     let typesFiltrados = arrayPokemones;
     let newArray = typesFiltrados.filter(
       (elemento) => {
-          if (elemento.type === 'water'){
+          if (elemento.type === [water, poisson, flying] [0]){
           return true 
           }
 
