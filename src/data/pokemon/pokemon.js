@@ -197,7 +197,7 @@ export default {
   },
   {
     "num": "003",
-    "num": "venusaur",
+    "name": "venusaur",
     "generation": {
       "num": "generation i",
       "name": "kanto"

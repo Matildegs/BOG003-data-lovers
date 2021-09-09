@@ -2,9 +2,13 @@ import data from './data/pokemon/pokemon.js';
 // importa la data de pokemones 
 
 const arrayPokemones= data.pokemon;
-const mostrarPokemones= () => {
+const mostrarPokemones= (arregloMostrar) => {
     const divPokemones= document.createElement("div");
-    arrayPokemones.forEach(poke=>{
+    const containerdiv= document.querySelector("#container");
+    containerdiv.innerHTML= ""
+    //document.getElementById("conteiner");
+    //document.querySelector(".container");
+    arregloMostrar.forEach(poke=>{
         const parrafoNombre= document.createElement("h2");
         parrafoNombre.innerHTML= poke.name;
         const typePokemon = document.createElement("h3");
@@ -31,7 +35,7 @@ const mostrarPokemones= () => {
     }) 
     document.querySelector(".container").appendChild(divPokemones);
 }
-window.addEventListener("Load", (mostrarPokemones()));
+window.addEventListener("Load", (mostrarPokemones(arrayPokemones)));
 
 //ordenar
 const selectElement = document.querySelector('#formOrder');
@@ -54,10 +58,15 @@ selectElement.addEventListener('change', (event) =>{
         }
     }
         );
+        mostrarPokemones(resultNew);
+      
     console.log(resultNew);
     console.log(event)
+
    
 });
+
+
     
 //filtrado por defensa
 function filtrar()
@@ -99,3 +108,4 @@ filterType.addEventListener ("change", () =>{
 
         console.log(newArray);
     });
+    
