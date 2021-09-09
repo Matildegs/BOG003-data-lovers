@@ -35,12 +35,18 @@ window.addEventListener("Load", (mostrarPokemones()));
 
 //ordenar
 const selectElement = document.querySelector('#formOrder');
-
+console.log(selectElement);
 selectElement.addEventListener('change', (event) =>{
     
-    const order = document.querySelector ('.result');
-    let selectOrder = arrayPokemones;
-    let resultNew = selectOrder.sort(
+   // const order = document.querySelector ('.result');
+    //let selectOrder = arrayPokemones; 
+
+    const orderPoks = arrayPokemones.map((pokemon) =>{
+        return pokemon.name
+    });
+    console.log(orderPoks.sort());
+    console.log(arrayPokemones)
+   /* let resultNew = selectOrder.sort(
         (a, b) => { 
         if(a.name === b.name){ 
             return 0
@@ -53,9 +59,10 @@ selectElement.addEventListener('change', (event) =>{
             return -1
         }
     }
-        );
-    console.log(resultNew);
-    console.log(event)
+        );*/
+    //console.log(resultNew);
+    //console.log(event)
+   
    
 });
     
