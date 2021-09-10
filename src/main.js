@@ -39,13 +39,13 @@ window.addEventListener("Load", (mostrarPokemones(arrayPokemones)));
 
 //ordenar
 const selectElement = document.querySelector('#formOrder');
-console.log(selectElement);
+
 selectElement.addEventListener('change', (event) =>{
     
     const order = document.querySelector ('.result');
-    let selectOrder = arrayPokemones; 
+    let selectOrder = arrayPokemones;
     let resultNew = selectOrder.sort(
-       (a, b) =>{ 
+        (a, b) => { 
         if(a.name === b.name){ 
             return 0
         
@@ -56,11 +56,11 @@ selectElement.addEventListener('change', (event) =>{
         else if(a.name < b.name){
             return -1
         }
-<<<<<<< HEAD
     }
         );
+        const desendente = resultNew.reverse();
+        console.log(desendente);
         mostrarPokemones(resultNew);
-      
     console.log(resultNew);
     console.log(event)
 
@@ -75,29 +75,11 @@ function filtrar()
     let filterBest = document.getElementById("formAttack");
     filterBest.addEventListener ("change", () =>{
         let filtrado = arrayPokemones;
-=======
-    });
-    
-    console.log(resultNew);
-    console.log(event)
-});
->>>>>>> b1403ede79f228a4bec5577a94e008e3b90478f5
-
-//orden descendente
-
-const order = document.querySelector ('.result');
-    let selectOrder = arrayPokemones; 
-    let resultNew = selectOrder.reverse(
-         (b, a)=>{
 
 
-    });
-    
-//filtrado por defense
-    const filterBest = document.getElementById("formAttack");
-    filterBest.addEventListener ("change", () =>{
-        let filtrado = arrayPokemones;})
 
+})
+}
 
 
 // "base-attack": "118",
@@ -106,13 +88,15 @@ const order = document.querySelector ('.result');
 
 //Filter
 
+
+
 let filterType = document.getElementById("filterType");
 filterType.addEventListener ("change", () =>{
     
     let typesFiltrados = arrayPokemones;
     let newArray = typesFiltrados.filter(
       (elemento) => {
-          if (elemento.type === [water, poisson, flying] [0]){
+          if (elemento.type === 'water'){
           return true 
           }
 
