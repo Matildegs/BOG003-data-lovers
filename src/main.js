@@ -2,13 +2,9 @@ import data from './data/pokemon/pokemon.js';
 // importa la data de pokemones 
 
 const arrayPokemones= data.pokemon;
-const mostrarPokemones= (arregloMostrar) => {
+const mostrarPokemones= () => {
     const divPokemones= document.createElement("div");
-    const containerdiv= document.querySelector("#container");
-    containerdiv.innerHTML= ""
-    //document.getElementById("conteiner");
-    //document.querySelector(".container");
-    arregloMostrar.forEach(poke=>{
+    arrayPokemones.forEach(poke=>{
         const parrafoNombre= document.createElement("h2");
         parrafoNombre.innerHTML= poke.name;
         const typePokemon = document.createElement("h3");
@@ -35,17 +31,17 @@ const mostrarPokemones= (arregloMostrar) => {
     }) 
     document.querySelector(".container").appendChild(divPokemones);
 }
-window.addEventListener("Load", (mostrarPokemones(arrayPokemones)));
+window.addEventListener("Load", (mostrarPokemones()));
 
 //ordenar
 const selectElement = document.querySelector('#formOrder');
-
+console.log(selectElement);
 selectElement.addEventListener('change', (event) =>{
     
     const order = document.querySelector ('.result');
-    let selectOrder = arrayPokemones;
+    let selectOrder = arrayPokemones; 
     let resultNew = selectOrder.sort(
-        (a, b) => { 
+       (a, b) =>{ 
         if(a.name === b.name){ 
             return 0
         
@@ -56,57 +52,24 @@ selectElement.addEventListener('change', (event) =>{
         else if(a.name < b.name){
             return -1
         }
-    }
-        );
-        const desendente = resultNew.reverse();
-        console.log(desendente);
-        mostrarPokemones(resultNew);
+    });
+    
     console.log(resultNew);
     console.log(event)
-
-   
 });
 
-
     
-//filtrado por defensa
-function filtrar()
-{
-    let filterBest = document.getElementById("formAttack");
+//filtrado por defense
+   /* const filterBest = document.getElementById("formAttack");
     filterBest.addEventListener ("change", () =>{
-        let filtrado = arrayPokemones;
-
-
-
+        let filtrado = arrayPokemones;})*/
+const defense = mostrarPokemones.filter((mostrarPokemon) =>{
+    return mostrarPokemones.defense > 150;
 })
-}
-
+console.log(defense);
 
 // "base-attack": "118",
 //"base-defense": "111",
 
 
 //Filter
-
-
-
-let filterType = document.getElementById("filterType");
-filterType.addEventListener ("change", () =>{
-    
-    let typesFiltrados = arrayPokemones;
-    let newArray = typesFiltrados.filter(
-      (elemento) => {
-          if (elemento.type === 'water'){
-          return true 
-          }
-
-          else{
-            return false  
-          } 
-      }
-    )
-    //( type => type === type);
-
-        console.log(newArray);
-    });
-    
