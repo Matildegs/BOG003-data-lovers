@@ -1,9 +1,23 @@
+import { example, anotherExample } from '../src/data.js';
 
 
-export const example = () => {
-  return 'example';
-};
+describe('example', () => {
+  it('is a function', () => {
+    expect(typeof example).toBe('function');
+  });
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+  it('returns `example`', () => {
+    expect(example()).toBe('example');
+  });
+});
+
+
+describe('anotherExample', () => {
+  it('is a function', () => {
+    expect(typeof anotherExample).toBe('function');
+  });
+
+  it('returns `anotherExample`', () => {
+    expect(anotherExample()).toBe('OMG');
+  });
+});

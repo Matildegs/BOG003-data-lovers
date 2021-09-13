@@ -64,7 +64,7 @@ selectElement.addEventListener('change', (event) =>{
     filterBest.addEventListener ("change", () =>{
         let filtrado = arrayPokemones;})*/
 const defense = mostrarPokemones.filter((mostrarPokemon) =>{
-    return mostrarPokemones.defense > 150;
+    return mostrarPokemon.defense > 150;
 })
 console.log(defense);
 
