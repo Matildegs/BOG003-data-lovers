@@ -76,7 +76,7 @@ function filtrar()
     let filterBest = document.getElementById("formAttack");
     filterBest.addEventListener ("change", () =>{
         let filtrado = arrayPokemones;})
-const defense = mostrarPokemones.filter((mostrarPokemon) =>{
+    const defense = mostrarPokemones.filter((mostrarPokemon) =>{
     return mostrarPokemon.defense > 150;
         let filtrado = arrayPokemones;
 
