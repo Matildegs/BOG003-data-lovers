@@ -1,3 +1,4 @@
+import pokemon from './data/pokemon/pokemon.js';
 import data from './data/pokemon/pokemon.js';
 // importa la data de pokemones 
 
@@ -87,26 +88,13 @@ function filtrar()
 
 
 //Filter
-
-
-
 let filterType = document.getElementById("filterType");
 filterType.addEventListener ("change", () =>{
-    
-    let typesFiltrados = arrayPokemones;
-    let newArray = typesFiltrados.filter(
-      (elemento) => {
-          if (elemento.type === 'water'){
-          return true 
-          }
-
-          else{
-            return false  
-          } 
-      }
-    )
+    let filter = document.querySelector('#contenedor')
+    let newArray = arrayPokemones.filter(element => element.type[0]) 
+      
     //( type => type === type);
-
+    
         console.log(newArray);
     });
     
