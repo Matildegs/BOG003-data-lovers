@@ -141,8 +141,8 @@ let filterType = document.getElementById("filterType");
 filterType.addEventListener("change", (evt) => {
     let filter = document.querySelector('#contenedor')
     const selected = evt.target.selectedOptions[0].outerText;
-    let newArray = arrayPokemones.filter(element => element.type[0] == selected.toLowerCase())
-
+    //let newArray = arrayPokemones.filter(element => element.type[0] == selected.toLowerCase())
+    let newArray = arrayPokemones.filter(element => element.type.includes(selected.toLowerCase()))
     //( type => type === type)(map - filter);
   mostrarPokemones(newArray)
    // console.log(newArray); 
