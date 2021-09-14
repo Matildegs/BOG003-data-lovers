@@ -26,8 +26,8 @@ const mostrarPokemones= (arregloMostrar) => {
 
         divPokemon.appendChild(parrafoNombre);
         divPokemon.appendChild(typePokemon);
-        divPokemon.appendChild(baseAttack);
         divPokemon.appendChild(baseDefense);
+        divPokemon.appendChild(baseAttack);
         divPokemon.appendChild(divImage);
         divPokemones.appendChild(divPokemon);
       
@@ -71,23 +71,69 @@ selectElement.addEventListener('change', (event) =>{
 
     
 //filtrado por defensa
-function filtrar()
-{
-    let filterBest = document.getElementById("formAttack");
-    filterBest.addEventListener ("change", () =>{
-        let filtrado = arrayPokemones;})
-const defense = mostrarPokemones.filter((mostrarPokemon) =>{
-    return mostrarPokemon.defense > 150;
-        let filtrado = arrayPokemones;
+    let filterBest = document.getElementById("attack")
+    filterBest.addEventListener("click", (e) =>{ 
+console.log("filterBest")
+      let attackValue = parseInt(document.getElementById("attack").value);
+      let filterPok
+      if (attackValue === 100) {
+         filterPok = arrayPokemones.filter((pokemon) =>{
+        let filtradoAtaque = parseInt(pokemon.stats["base-attack"]) <= attackValue;
+        return filtradoAtaque
+        })
+        mostrarPokemones (filterPok)
+        }
+      else if (attackValue === 200) {
+            filterPok = arrayPokemones.filter((pokemon) =>{
+           let filtradoAtaque = parseInt(pokemon.stats["base-attack"]) >=100 && parseInt(pokemon.stats["base-attack"]) <= attackValue;
+           return filtradoAtaque
+           })
+           mostrarPokemones (filterPok)
+           }
+      else if (attackValue === 300) {
+            filterPok = arrayPokemones.filter((pokemon) =>{
+           let filtradoAtaque = parseInt(pokemon.stats["base-attack"]) >=200 && parseInt(pokemon.stats["base-attack"]) <= attackValue;
+           return filtradoAtaque
+           })
+           mostrarPokemones (filterPok)
+           }
+    })
 
+// filtrado por 
 
+let filtradoDefensa= document.getElementById("defense")
+filtradoDefensa.addEventListener("click", (e) =>{ 
+console.log("filtrado")
+  let defenseValue= parseInt(document.getElementById("defense").value);
+  let defenseNew
+  if (defenseValue === 100) {
+  console.log(100)
+     defenseNew = arrayPokemones.filter((pokemon) =>{
+    let filtradoDefensa = parseInt(pokemon.stats["base-defense"]) <= defenseValue;
+    return filtradoDefensa
+    })
+    mostrarPokemones(defenseNew)
 
+    }
+  else if (defenseValue === 200) {
+    console.log("200")
+        defenseNew = arrayPokemones.filter((pokemon) =>{
+       let filtradoDefensa = parseInt(pokemon.stats["base-defense"]) >=100 && parseInt(pokemon.stats["base-defense"]) <= defenseValue;
+       return filtradoDefensa
+       })
+       mostrarPokemones(defenseNew)
+       }
+  else if (defenseValue === 300) {
+        defenseNew = arrayPokemones.filter((pokemon) =>{
+       let filtradoDefensa = parseInt(pokemon.stats["base-defense"]) >=200 && parseInt(pokemon.stats["base-defense"]) <= defenseValue;
+       return filtradoDefensa
+       })
+       mostrarPokemones(defenseNew)
+       }
 })
-}
 
 
-// "base-attack": "118",
-//"base-defense": "111",
+
 
 
 //Filter
