@@ -73,7 +73,7 @@ selectElement.addEventListener('change', (event) =>{
 //filtrado por defensa
     let filterBest = document.getElementById("attack")
     filterBest.addEventListener("click", (e) =>{ 
-console.log("filterBest")
+
       let attackValue = parseInt(document.getElementById("attack").value);
       let filterPok
       if (attackValue === 100) {
