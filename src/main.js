@@ -98,7 +98,7 @@ filterType.addEventListener("change", (evt) => {
     const selected = evt.target.selectedOptions[0].outerText;
     let newArray = arrayPokemones.filter(element => element.type[0] == selected.toLowerCase())
 
-    //( type => type === type);
-
-   console.log(newArray); 
+    //( type => type === type)(map - filter);
+  mostrarPokemones(newArray)
+   // console.log(newArray); 
 });
